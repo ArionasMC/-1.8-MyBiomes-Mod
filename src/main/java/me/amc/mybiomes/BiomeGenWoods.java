@@ -21,10 +21,6 @@ public class BiomeGenWoods extends BiomeGenBase {
 		this.spawnableMonsterList.clear();
 		this.spawnableWaterCreatureList.clear();
 		
-
-	//	this.theBiomeDecorator.cactiPerChunk = 0;
-	//	this.theBiomeDecorator.deadBushPerChunk = 3;
-		
 		this.setHeight(height_LowPlains);
 		
 		
@@ -44,11 +40,7 @@ public class BiomeGenWoods extends BiomeGenBase {
 			WorldGenDiamondTree worldGenDiamondTree = new WorldGenDiamondTree();
 			worldGenDiamondTree.generate(par1World, par2Random, pos.add(x,y,z));
 			System.out.println("=========> Position: "+pos.getX()+", "+pos.getY()+", "+pos.getZ());
-			
-		/*	
-			WorldGenDesertWells worldgendesertwells = new WorldGenDesertWells();
-			worldgendesertwells.generate(par1World, par2Random, pos.add(x, y, z));
-		*/
+
 		}
 	}
 
