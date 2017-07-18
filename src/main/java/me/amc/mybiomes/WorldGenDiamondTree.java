@@ -17,8 +17,7 @@ public class WorldGenDiamondTree extends WorldGenerator{
 
 	public boolean generate(World world, Random random, BlockPos pos)
 	{
-	//	if (world.rand.nextInt(10) == 0)
-	//	{
+	
 			while (world.isAirBlock(pos.down()) && pos.getY() > 55)
 			{
 				pos.subtract(new Vec3i(0, 1, 0));
@@ -101,9 +100,7 @@ public class WorldGenDiamondTree extends WorldGenerator{
 			setBlock(world, pos.getX(), pos.getY(), pos.getZ() - back, leaf);
 
 			return true;
-	//	}
-	//	else
-	//		return false;
+	
 	}
 
 	public void setBlock(World world, int x, int y, int z, IBlockState block)
